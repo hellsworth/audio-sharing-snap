@@ -14,8 +14,6 @@ jobs:
         uses: actions/checkout@v3
       - name: Run desktop-snaps action
         uses: ubuntu/desktop-snaps@UDENG-961-optionally_take_user_as_input
-        permissions:
-          actions: write
         with:
           user: hellsworth
           token: ${{ secrets.GITHUB_TOKEN }}
